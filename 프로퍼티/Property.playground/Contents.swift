@@ -48,3 +48,20 @@ print(stock)
 stock.purchasePrice
 stock.purchasePrice = 3000
 stock.averagePrice
+
+
+class Account {
+    var credit: Int = 0 {
+        // 소괄호 이름 지정
+        willSet {
+            print("잔액이 \(credit)원에서 \(newValue)원으로 변경될 예정입니다.")
+        }
+        
+        didSet {
+            print("잔액이 \(oldValue)원에서 \(credit)원으로 변경되었습니다.")
+        }
+    }
+}
+
+var account = Account()
+account.credit = 1000
