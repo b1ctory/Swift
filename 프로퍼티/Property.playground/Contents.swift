@@ -65,3 +65,16 @@ class Account {
 
 var account = Account()
 account.credit = 1000
+
+// 타입프로퍼티
+struct SomeStructure {
+    static var storedTypeProperty = "Some value." // 스토어
+    static var computedTypeProperty: Int { // computed
+        return 1
+    }
+}
+
+SomeStructure.computedTypeProperty
+SomeStructure.storedTypeProperty
+SomeStructure.storedTypeProperty = "hello"
+SomeStructure.storedTypeProperty
