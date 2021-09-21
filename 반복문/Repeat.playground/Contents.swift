@@ -17,3 +17,15 @@ for i in array {
     print(i)
 }
 
+/*
+ while 조건식 {
+    // 실행할 구문
+}
+ */
+
+var number = 5
+
+while number < 10 {
+    number += 1
+}
+
