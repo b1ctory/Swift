@@ -29,3 +29,17 @@ while number < 10 {
     number += 1
 }
 
+/*
+ repeat {
+    // 실행할 구문
+} while 조건식
+ */
+
+var x = 6
+
+repeat {
+    x += 2
+} while x < 5
+
+// 적어도 한번은 반드시 실행됨.
+print(x)
