@@ -74,6 +74,6 @@ doSomething4() {
     $0+$1+$2
 }
 
-doSomething {
+doSomething4 {
     $0+$1+$2
 }
