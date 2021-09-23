@@ -34,3 +34,11 @@ do {
 } catch {
     print("그 외 오류 발생 : \(error)")
 }
+
+// 3. try?
+let status = try? checkPhoneBatteryStatus(batteryLevel: 30)
+print(status)
+
+// 4. try! -> 에러를 던지지 않을거라고 확신할 때에만!
+let status2 = try! checkPhoneBatteryStatus(batteryLevel: 30)
+print(status2)
